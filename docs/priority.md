@@ -5,7 +5,7 @@ Is one of the most important properties of this addon.
 
 It defines which `PCam` a scene's `Camera` should be corresponding with and be attached to. This is decided by the `PCam` with the highest `Priority`.
 
-Changing `Priority` will send an event to the scene's `PCamHost`, which will then determine whether if the `Priority` value is greater than or equal to the currently highest `pcam`'s in the scene. The `PCam` with the highest value will then reattach the `Camera` accordingly.
+Changing `Priority` will send an event to the scene's `PCamHost`, which will then determine whether the `Priority` value is greater than or equal to the highest priority among all `PCams` in the scene. The `PCam` with the highest value will then reattach the `Camera` accordingly.
 
 When a new `PCam` has the highest priority, it will trigger an interpolation to the `PCam`. See the [Tween](/resource-types/tween) page for more information.
 
